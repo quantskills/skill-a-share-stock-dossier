@@ -1,5 +1,7 @@
 # 🩺 A-Share Stock Dossier Skill
 
+**简体中文** | [English](README.en.md)
+
 > 输入一个 A 股代码，输出一份可溯源的中文个股尽调报告：基本面、分红资本运作、股东行为、质押解禁减持风险、资金面，一次查清。
 
 <p align="center">

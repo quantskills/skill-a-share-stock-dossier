@@ -19,7 +19,7 @@
 
 它最有价值的能力是**组合风险信号**：单看质押率或解禁日历都不可怕，"质押率高 **+** 解禁临近"、"减持计划 **+** 业绩预告下修"这类叠加才是真正的雷区，本技能内置了这些组合规则的自动触发。
 
-> 数据契约一律来自姊妹技能 [`pandadata-api`](../skill-pandadata-api)；本技能负责"查什么、怎么判"，不负责"接口长什么样"。
+> 数据契约一律来自姊妹技能 [`pandadata-api`](https://github.com/quantskills/skill-pandadata-api)；本技能负责"查什么、怎么判"，不负责"接口长什么样"。
 
 ---
 
@@ -90,6 +90,16 @@ flowchart TD
 # Claude Code（全局）
 cp -r skill-pandadata-api      ~/.claude/skills/pandadata-api
 cp -r skill-a-share-stock-dossier ~/.claude/skills/a-share-stock-dossier
+
+# Codex（全局，推荐开放 Agent Skills 标准目录）
+mkdir -p ~/.agents/skills
+cp -r skill-pandadata-api ~/.agents/skills/pandadata-api
+cp -r skill-a-share-stock-dossier ~/.agents/skills/a-share-stock-dossier
+
+# Cursor（项目级）
+mkdir -p .cursor/skills
+cp -r skill-pandadata-api .cursor/skills/pandadata-api
+cp -r skill-a-share-stock-dossier .cursor/skills/a-share-stock-dossier
 ```
 
 ### 2️⃣ 直接用自然语言提问

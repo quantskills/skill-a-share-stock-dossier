@@ -1,0 +1,4 @@
+interface:
+  display_name: "A-Share Stock Dossier"
+  short_description: "基于Pandadata的A股个股尽调与风险体检报告"
+  default_prompt: "Use $a-share-stock-dossier 为 000001.SZ 生成带数据来源的中文个股尽调报告。"

@@ -1,6 +1,10 @@
 ---
 name: a-share-stock-dossier
-description: "Generate a structured Chinese A-share stock due-diligence dossier from Pandadata interfaces, covering company profile, financials, dividends and capital actions, shareholder behavior, pledge/unlock/reduction risks, market funds, and sourced appendices. Use when the user asks for A股个股体检、个股尽调、公司全面分析、股票基本面报告、质押解禁减持风险排查, or a one-stop A-share company dossier."
+description: Generate a structured Chinese A-share stock due-diligence dossier from
+  Pandadata interfaces, covering company profile, financials, dividends and capital
+  actions, shareholder behavior, pledge/unlock/reduction risks, market funds, and
+  sourced appendices. Use when the user asks for A股个股体检、个股尽调、公司全面分析、股票基本面报告、质押解禁减持风险排查,
+  or a one-stop A-share company dossier.
 metadata:
   organization: QuantSkills
   organization_url: https://github.com/quantskills
@@ -8,6 +12,29 @@ metadata:
   repository_url: https://github.com/quantskills/skill-a-share-stock-dossier
   project_type: skill
   collection: a-share-stock-dossier
+quantSkills:
+  project_type: skill
+  category: analyst
+  tags:
+  - a-share
+  - stock-dossier
+  - fundamentals
+  - due-diligence
+  - pandadata
+  platforms:
+  - claude-code
+  - codex
+  - openclaw
+  - cursor
+  status: stable
+  validation_level: runnable
+  maintainer_type: official
+  summary_zh: 输入一个 A 股代码，输出一份可溯源的中文个股尽调报告：基本面、分红资本运作、股东行为、质押解禁减持风险、资金面，一次查清。
+  summary_en: A-share stock dossier skill that uses Pandadata to produce company,
+    financial, dividend, shareholder, and risk analysis.
+  license: GPL-3.0
+  requires:
+  - skill-pandadata-api
 ---
 
 # A-Share Stock Dossier

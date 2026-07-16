@@ -41,6 +41,25 @@ quantSkills:
   - skill-pandadata-api
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "补充尽调范围、关注风险或时间窗口；留空则按技能默认口径"
+  },
+  "fields": [
+    {
+      "key": "symbol",
+      "label": "股票代码或名称",
+      "type": "text",
+      "placeholder": "如：600519.SH 或 贵州茅台",
+      "required": true
+    }
+  ],
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}请为 {{symbol}} 生成可溯源的 A 股个股尽调档案，覆盖公司画像、财务、分红与资本动作、股东行为、质押/解禁/减持风险、市场资金及来源附录，区分事实、衍生指标与判断，输出中文报告。"
+}
+```
+
 # A-Share Stock Dossier
 
 Use this skill to turn one A-share symbol, such as `000001.SZ`, into a sourced Chinese due-diligence report covering fundamentals, corporate actions, shareholder behavior, event risks, and market funds.
